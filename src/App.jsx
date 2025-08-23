@@ -1,11 +1,10 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 
-const App = () => {
+function App() {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <div>
+      <h1>Ankit</h1>
+    </div>
   )
 }
 
