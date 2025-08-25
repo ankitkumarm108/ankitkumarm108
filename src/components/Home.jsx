@@ -1,6 +1,7 @@
 import React from "react";
 import myPhoto from "../assets/me.jpg";
 import "./Home.css"; // 👈 import CSS for animation
+import TypeAndDelete from "./TypeAndDelete";
 
 function Home() {
   return (
@@ -10,8 +11,12 @@ function Home() {
       <div className="home-left">
         <h1>
           Hello, I’m <span className="highlight">Ankit <span className="wave">👋</span></span>
+            {/* <TypeAndDelete /> */}
         </h1>
-        <h2 style={{fontSize:26,color:'#000'}}>Technical Lead – Mobile Applications</h2>
+        <h2 style={{fontSize:26,color:'#000'}}>
+           <TypeAndDelete />
+          {/* Technical Lead – Mobile Applications */}
+          </h2>
         <p>
 I am a passionate React Native developer and team lead, focused on building scalable and user-friendly mobile applications.
 With expertise in Android and iOS development using React Native, I deliver clean, functional, and creative solutions.
