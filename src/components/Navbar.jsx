@@ -10,13 +10,6 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      {/* Hamburger for mobile */}
-      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
       {/* Nav Links */}
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <ul>
@@ -28,6 +21,13 @@ function Navbar() {
           <li><a href="#resume" onClick={handleLinkClick}>Resume</a></li>
           <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
         </ul>
+      </div>
+
+      {/* Hamburger for mobile */}
+      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
   );
