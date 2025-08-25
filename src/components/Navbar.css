@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;       /* stays above all content */
+  z-index: 1000;
 }
 
 /* Push page content below navbar */
@@ -49,7 +49,9 @@ body {
   cursor: pointer;
   gap: 5px;
   position: absolute;
-  right: 100px; 
+  right: 100px;
+  top: 25px;
+  transition: all 0.3s ease;
 }
 
 .hamburger span {
@@ -57,6 +59,20 @@ body {
   height: 3px;
   background: white;
   border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger animation -> into X */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* Mobile responsive */
@@ -70,7 +86,7 @@ body {
     width: 100%;
     background: #0077ff;
     position: absolute;
-    top: 100%;   /* menu drops just below navbar */
+    top: 100%;
     left: 0;
     text-align: center;
     padding: 20px 0;
