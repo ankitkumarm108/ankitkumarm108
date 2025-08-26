@@ -1,4 +1,3 @@
-/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -70,5 +69,5 @@ html, body {
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* adjust based on navbar height */
+  scroll-padding-top: 90px;
 }
