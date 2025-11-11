@@ -1,6 +1,6 @@
 import React from "react";
 import "./Section.css";
-import myResume from "../assets/Ankit_Kumar_React_Native_Resume.pdf"; // 👈 import the pdf
+import myResume from "../assets/Ankit_Kumar.pdf"; // 👈 import the pdf
 function Resume() {
   return (
     <div className="section">
